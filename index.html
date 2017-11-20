@@ -1,89 +1,78 @@
-<!--practicing and working to get comfortable with formatting an html document from scratch-->
-
-<!--be patient with yourself fool but also get after it-->
+<!--project 1 first homework assignment. This is the first html sheet containing bio information that will link to second and third html sheets in project -->
 
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title>Tryna get to work</title>
-	</head>
+<head>
+	<title>Portfolio Bio</title>
 
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-<body>
+</head>
 
-	<div>
-		<h1>How to Get Lost in That Sauce</h1>
+<body>	
 
-		<h2>A Complete Guide to Sauce</h2>
-			
-			<img class="Gucci" src="https://pbs.twimg.com/media/CfZxxdjWwAADK5y.jpg">	
+		<div class="container">
+			<div class="content">	
+			<ul class="navlist1">
+				<li><a href="contact.html">Contact</a></li>	
+				<li><a href="portfolio.html">Portfolio</a></li>	
+				<li><a href="index.html">About</a></li>			
+			</ul>		
+				<h1>Rebecca Nawls-Walker</h1>
+			</div>
+		</div>
+	
 
-	</div>
+	<div class="container">
+
+			<div class="maincontent">
 		
-	<div>
-		<h3>But what is "Sauce"</h3>
+			<h2>About Me</h2>
 
-		<p> Gucci Mane famously described sauce for us back in the day of yadda yadda and it went a little something like this</p>
+			<hr>
 
-		<p>"If a man does not have the sauce, then he is lost. But the same man can be lost in the sauce". -Gucci (2013)</p>
+			<div class="selfie">
+				<img src="assets/images/Jodie_Landon.jpg" alt="wontwork">
+			</div>	
 
-</div>
+			<p>My name is Rebecca Nawls-Walker and I am currently studying to be  a web developer through the coding bootcamp at Northwestern university. I have always had an interest in finding out how different things worked and over the years I realized that being the annoying kid who would constantly ask why things worked the way they did had it's perks as I got older.</p>
 
-<div>
-	
-	<h2>Sauce Essentials</h2>
+			<p>In my current profession I consider myself to be a data curator. My job is to make information out of data that my unit owns or performs scrubs for and we use this data to provide key decision makers at our institution with what they need to be able to make decisions on behalf of the varies university stakeholders. While this work is fun and allows me to get into the details of the random bits of data we have, I'm really excited to translate my current skills and transform them into something that will allow me to answer more why questions.</p>
 
-	<h3>What does one need to obtain saucyness</h3>
+			</div>
+		</div>
 
-	<ul>
-		<li>one must be swagged out</li>
-		<li>One must have faith in ones own movements</li>
-		<li>know how to flip a brick</li>
-		<li>Get an ice cream cone tatted on your face so we know it's real</li>
+			<div class="sidebarcontent">
+		
+				<h3>Connect with me</h3>
 
-			<img class="Gucci" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf6IDeQPZvWpkcQMyagA97wrOSeuXxyfHrOFjKpJ7a_FHI69Jrug">
-	</ul>
+				<hr>
 
+				<ul class="navlist2">
+					
 
-</div>
+					<li><a href="https://linkedin.com"> 
+					<img id="logo" src="assets/images/linked in.png">
+					</a></li>
 
-<div>
-	<h2>If All Else Fails</h2>
+					<li><a href="https://GitHub.com"> 
+					<img id="logo" src="assets/images/githubnew.png">
+					</a></li>
 
-		<h4>Fake that shit til you make it</h4>
+					<li><a href="https://Meetup.com"> 
+					<img id="logo" src="assets/images/meetupicon.jpg">
+					</a></li>
 
-</div>
-
-<div>
-	
-		<form action="#"" method="post">
-
-		<fieldset>
-			<legend>Who is the sauciest rapper tho?</legend>
-			First name:<br>
-			<input type="text" name="firstname" value="mickey" placeholder="first name"><br>
-			Last name:<br>
-			<input type="text" name="lastname" value="mouse" placeholder="Last Name"><br><br>
-			Pick the rapper with the most Sauce:<br>
-			<select>
-				<option value="Gucci">Gucci</option>
-				<option value="Cudi">Cudi</option>
-				<option value="Offset">Offset</option>
-				<option value="21savage">21 Savage</option>
-			</select>	
-			<textarea name="description"></textarea>
-			<input type="submit" value="submit">
-			<button>Hey</button>
-				
-			</textarea>
-
-		</fieldset>
-
-	</form>
+				</ul>	
+			</div>
 
 
-</div>
+<footer>
+	<p id="footer">&copy;2016 Rebecca Nawls-Walker</p>
+</footer>
+
 
 </body>
 </html>
