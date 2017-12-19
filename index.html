@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Crystal Gem Collector</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 heading">
+				<h1>GEM COLLECTOR!</h1>
+			</div>		
+		</div>
+		<div class="row">
+			<div class="col-lg-5 readMe">
+				<p id="instruction">You will be given a random number at the start of the game.</p>
+
+				<p id="instruction">There are four gems below. By clicking on a gem you will add a specific amount of points to your total score. </p>
+					
+				<p id="instruction">You win the game by matching your total score to the random number. </p>
+				
+				<p id="instruction">The value of each crystal is hidden until you click on it.</p>
+
+				<p id="instruction">Each time when the game starts, the game will change the values of each crystal.</p>
+
+
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-lg-2 randomNumCon">
+				<p id="randomNumber">random variable goes here</p>
+			</div>	
+			<div class="col-lg-2 randomNumCon">
+				<p>WINS:</p><span id="wins"></span>
+				<p>LOSSES:</p><span id="losses"></span>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1 Gemstones">
+				<button id="amethyst"><img class="Gems" src="assets/images/amethyst.jpg"></button>
+			</div>	
+			<div class="col-lg-1 Gemstones">
+				<button id="steven"><img class="Gems" src="assets/images/Steven_Kawaii.jpg"></button>
+			</div>	
+	
+			<div class="col-lg-1 Gemstones">
+				<button id="garnett"><img class="Gems" src="assets/images/garnett.png"></button>
+			</div>	
+			<div class="col-lg-1 Gemstones">
+				<button id="pearl"><img class="Gems" src="assets/images/Pearl.jpg"></button>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 score">
+				<p>Your total score is:</p>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-lg-4 newTotal">
+				<p id="newRandom">Second random variable plus first</p>
+			</div>	
+		</div>
+	</div>	
+
+
+</body>
+</html>

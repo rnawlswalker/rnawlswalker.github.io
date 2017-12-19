@@ -1,0 +1,66 @@
+body {
+	position: relative;
+	background-image: url("lost_in_the_sauce-8550.jpg");
+	/*background-color: green;*/
+}
+
+
+.heading {
+		border: 2px;
+		border-color: black;
+		background-color: orange;
+		height: 60px;
+		margin-bottom: 10px;
+}
+
+#instruction {
+		margin-bottom: 7px;
+
+}
+
+
+
+.readMe {
+	border: 2px;
+	border-color: black;
+	background-color: white;
+	margin-bottom: 10px;
+}
+
+.randomNumCon {
+	border: 2px;
+	border-color: black;
+	background-color: white;
+	margin-right: 10px;
+	background-color: #66CDAA;
+}
+
+.score {
+	border: 2px;
+	border-color: black;
+	background-color: white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-color: #FFB6C1;
+}
+
+.newTotal {
+	border: 2px;
+	border-color: black;
+	background-color: white;
+	margin-bottom: 10px;
+	background-color: #FF8C00s;
+}
+.Gems {
+		background-color: black;
+		height: 100px;	
+		width: 100px;
+
+}
+
+.Gemstones {
+	background-color: black;
+	padding: 0;
+	margin-top: 5px;
+	margin-right: 25px;
+}
