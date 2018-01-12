@@ -3,14 +3,14 @@ $(document).ready(function(){
 	//create variable firstNumber to store function that generates random integer between 19 and 120
 
 	function getRandomWin() {
-				min = 19
-				max = 121
+				min = 19;
+				max = 121;
 				return Math.floor(Math.random() * (max - min)) + min;
 	}
 
 	function getRandomGem() {
-				min = 1
-				max = 12
+				min = 1;
+				max = 12;
 				return Math.floor(Math.random() * (max - min)) + min;
 	}
 	
@@ -20,11 +20,11 @@ $(document).ready(function(){
 
 	//create four random variables for each gem containing random value between 1 and 12
 
-	var gem1 = getRandomGem()
+	var gem1 = getRandomGem();
 		
-	var gem2 = getRandomGem()
-	var gem3 = getRandomGem()
-	var gem4 = getRandomGem()
+	var gem2 = getRandomGem();
+	var gem3 = getRandomGem();
+	var gem4 = getRandomGem();
 
 
 	//create variable to hold score
@@ -59,31 +59,7 @@ $(document).ready(function(){
 				totalScore = 0;
 				$("newRandom").text(totalScore);
 		}
-
-	//increase the value of variable wins and reset the game
 	
-		// function winner () {
-		// 	if (totalScore == firstNumber) {
-		// 	wins++;
-		// 	$("#wins").text(wins);
-		// 	reset()
-		// 	}
-		// }	
-
-	//increase the value of variable wins and reset the game
-	
-		// function lossers () {
-		// 	if (totalScore > firstNumber) {
-		// 	losses++;
-		// 	$("#losses").text(losses);
-		// 	reset()
-		// }
-		// }	
-
-
-	//create click function for gem buttons		
-
-
 	$("#amethyst").on('click',function() {
 			totalScore = totalScore + gem1;
 			outcome();
