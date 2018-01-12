@@ -2,71 +2,55 @@ $(document).ready(function(){
 
 	//create variable firstNumber to store function that generates random integer between 19 and 120
 
-	var firstNumber = function getRandomIntInclusive () {
-				min = Math.ceil(19);
-				max = Math.floor(120);
-				return Math.floor(Math.random() * (max - min +1)) + min;
+	function getRandomWin() {
+				min = 19
+				max = 121
+				return Math.floor(Math.random() * (max - min)) + min;
 	}
 
-	function getRandomIntInclusive () {
-				min = Math.ceil(1);
-				max = Math.floor(12);
-				return Math.floor(Math.random() * (max - min +1)) + min;
+	function getRandomGem() {
+				min = 1
+				max = 12
+				return Math.floor(Math.random() * (max - min)) + min;
 	}
 	
 	//replace text in the ID randomNumber with the resulting value in firstNumber
-	$("#randomNumber").text(firstNumber);
-
+	winningNumber = getRandomWin();
+	$("#randomNumber").text(winningNumber);
 
 	//create four random variables for each gem containing random value between 1 and 12
 
-		var gem1 = getRandomIntInclusive()
+	var gem1 = getRandomGem()
 		
-		var gem2 = getRandomIntInclusive()
-		var gem3 = getRandomIntInclusive()
-		var gem4 = getRandomIntInclusive()
+	var gem2 = getRandomGem()
+	var gem3 = getRandomGem()
+	var gem4 = getRandomGem()
 
 
-		//create variable to hold score
+	//create variable to hold score
+	var totalScore = 0;
 
-		var totalScore = 0;
+	//create variables for wins and losses
+	var wins = 0;
+	var losses = 0;
+	//append value of variable wins to id #wins
+	$("#wins").text(wins);
 
-		//create variables for wins and losses
-
-		var wins = 0;
-		var losses = 0;
-
-		//append value of variable wins to id #wins
-		$("#wins").text(wins);
-
-		//append value of variable losses to id #losses
-
-		$("#losses").text(losses);
-
-		//create a function to reset game win player wins or losses
-
+	//append value of variable losses to id #losses
+	$("#losses").text(losses);
+	//create a function to reset game win player wins or losses
 		function reset () {
 			//defines firstNumber variable that generates new random number at reset of game
-			firstNumber = function getRandomIntInclusive () {
-			min = Math.ceil(19);
-			max = Math.floor(120);
-			return Math.floor(Math.random() * (max - min +1)) + min;
-			}
-
+			winningNumber = getRandomWin();
+			
 			//append value of firstNumber to id randomNumber
-			$("#randomNumber").text(firstNumber);
-
-			function getRandomIntInclusive () {
-				min = Math.ceil(1);
-				max = Math.floor(12);
-				return Math.floor(Math.random() * (max - min +1)) + min;
-			}
+			$("#randomNumber").text(winningNumber);
 			
 			//defines four gem variables that use the secondNumber variable to generate new random number between 1 and 12 for each gem
-				gem1 = getRandomIntInclusive();
-				gem2 = getRandomIntInclusive()
-				gem3 = getRandomIntInclusive()
-				gem4 = getRandomIntInclusive()
+				gem1 = getRandomGem();
+				gem2 = getRandomGem()
+				gem3 = getRandomGem()
+				gem4 = getRandomGem()
 
 				//sets total score to 0 when game resets
 				totalScore = 0;
@@ -129,7 +113,7 @@ $(document).ready(function(){
 	var newrandomNumber = totalScore;
 
 	function winner () {
-			if (newrandomNumber == firstNumber) {
+			if (newrandomNumber == winningNumber) {
 			wins++;
 			$("#wins").text(wins);
 			reset()
@@ -137,7 +121,7 @@ $(document).ready(function(){
 		}
 
 			function lossers () {
-			if (newrandomNumber > firstNumber) {
+			if (newrandomNumber > winningNumber) {
 			losses++;
 			$("#losses").text(losses);
 			reset()
