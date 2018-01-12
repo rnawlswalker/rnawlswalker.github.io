@@ -85,6 +85,7 @@ $(document).ready(function(){
 
 	$("#amethyst").on('click',function() {
 			totalScore = totalScore + gem1;
+			outcome();
 			$("#newRandom").text(totalScore);
 		
 	})
@@ -92,6 +93,7 @@ $(document).ready(function(){
 
 	$("#steven").on('click', function() {
 			totalScore = totalScore + gem2;
+			outcome();
 			$("#newRandom").text(totalScore);
 		
 	})
@@ -99,6 +101,7 @@ $(document).ready(function(){
 
 	$("#garnett").on('click', function() {
 			totalScore = totalScore + gem3;
+		outcome();
 			$("#newRandom").text(totalScore);
 		
 	})
@@ -106,28 +109,26 @@ $(document).ready(function(){
 
 	$("#pearl").on('click',function() {
 			totalScore = totalScore + gem4;
+		outcome();
 			$("#newRandom").text(totalScore);
 	
 	})
 
-	var newrandomNumber = totalScore;
 
-	function winner () {
-			if (newrandomNumber == winningNumber) {
+	function outcome() {
+			if (totalScore == winningNumber) {
 			wins++;
 			$("#wins").text(wins);
+			reset()
+			} 
+			if (totalScore > winningNumber) {
+			losses++;
+			$("#losses").text(losses);
 			reset()
 			}
 		}
 
-			function lossers () {
-			if (newrandomNumber > winningNumber) {
-			losses++;
-			$("#losses").text(losses);
-			reset()
-		}
-		}		
 
-
+		
 
 });
