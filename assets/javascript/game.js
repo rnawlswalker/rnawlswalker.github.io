@@ -40,6 +40,7 @@ $(document).ready(function(){
 	$("#losses").text(losses);
 	//create a function to reset game win player wins or losses
 		function reset () {
+			console.log("in reset");
 			//defines firstNumber variable that generates new random number at reset of game
 			winningNumber = getRandomWin();
 			
@@ -48,11 +49,11 @@ $(document).ready(function(){
 			
 			//defines four gem variables that use the secondNumber variable to generate new random number between 1 and 12 for each gem
 				gem1 = getRandomGem();
-				gem2 = getRandomGem()
-				gem3 = getRandomGem()
-				gem4 = getRandomGem()
+				gem2 = getRandomGem();
+				gem3 = getRandomGem();
+				gem4 = getRandomGem();
 			console.log('newgame');
-			console.log(winningNumber,gem1,gem2,gem3);
+			console.log(winningNumber,gem1,gem2,gem3,gem4);
 
 				//sets total score to 0 when game resets
 				totalScore = 0;
