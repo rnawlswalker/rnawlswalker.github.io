@@ -51,11 +51,11 @@ $(document).ready(function(){
 				gem2 = getRandomGem()
 				gem3 = getRandomGem()
 				gem4 = getRandomGem()
+			console.log('newgame');
+			console.log(winningNumber,gem1,gem2,gem3);
 
 				//sets total score to 0 when game resets
 				totalScore = 0;
-				wins = 0;
-				losses = 0;
 				$("newRandom").text(totalScore);
 		}
 
